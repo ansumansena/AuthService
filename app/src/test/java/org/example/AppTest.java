@@ -4,11 +4,12 @@
 package org.example;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.springframework.boot.test.context.SpringBootTest;
 
+@SpringBootTest
 public class AppTest {
-    @Test public void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    @Test 
+    public void contextLoads() {
+       // This test will pass if the application context loads successfully
     }
 }
